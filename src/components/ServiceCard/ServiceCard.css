@@ -1,0 +1,8 @@
+.ServiceCard img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.ServiceCard {
+    min-width: 300px;
+}

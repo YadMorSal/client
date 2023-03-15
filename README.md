@@ -68,3 +68,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Client Routes
+
+
+| URL                   | Descripción                                             | Protegido           |
+| :------------------- :|:------------------------------------------------------- :|: ------------------ :|
+| /                      | Página de inicio                                        | No                 |
+| /info-pagina           | Información de registro para anunciantes y usuarios     | No                 |
+| /list-servicios        | Lista con los servicios ofertados                       | No                 |
+| /servicios             | Listado de los anuncios que ofertan el servicio elegido | No                 |
+| /detalles/:id          | Detalles del anuncio seleccionado                        | No                 |
+| /inicio-sesion         | Página de inicio de sesión                              | No                 |
+| /registro-anunciantes  | Página de registro de anunciantes  y usuarios           | No                 |
+| /crear                 | Página del formulario para crear un nuevo anuncio       | Sí (requiere autenticación) |
+| /list-usuarios         | Listado de todos los usuarios                           | Sí (requiere autenticación) |
+| /perfil                | Página del perfil del usuario                           | Sí (requiere autenticación) |
+| *                      | Página de error 404                                     | No                 |

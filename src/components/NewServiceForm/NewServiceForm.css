@@ -1,0 +1,33 @@
+.FormService-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FormService-.form-group {
+    width: 100%;
+    margin: 0.5rem 0;
+
+}
+
+.FormService-form-label {
+
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.FormService-form-control {
+    width: 100%;
+    height: 2.7 rem;
+    padding: 5px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 0.8rem;
+}
+
+.FormService-.FormService {
+
+    background-size: cover;
+    background-position: center;
+
+}

@@ -1,0 +1,23 @@
+/* .create-user-button-container {
+    text-align: center;
+}
+
+.create-user-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.custom-modal .modal-dialog {
+    max-height: 400px;
+    /* ajusta el valor de altura máxima según sea necesario */
+
+
+/* .custom-modal .modal-body {
+    overflow-y: auto;
+    font-size: 12px;
+    /* habilitar el desplazamiento interno */

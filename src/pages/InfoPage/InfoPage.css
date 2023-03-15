@@ -1,0 +1,42 @@
+.fondo-pagina {
+    top: 0;
+    left: 0;
+    height: calc(100vh - 60px);
+    width: 100%;
+    background-image: url('/public/images/fondo_madera.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.InfoPage {
+    padding-top: 150px;
+    color: white;
+    text-align: justify;
+    color: rgb(62, 61, 3)
+}
+
+Col {
+    text-align: center;
+}
+
+.InfoPage ul {
+    text-align: left;
+    font-size: 1.4em;
+}
+
+.InfoPage ul li {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.create-user-button {
+    display: block;
+    margin: 60px auto 0;
+    width: 50%;
+    background-color: black;
+    color: white;
+}

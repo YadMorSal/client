@@ -1,0 +1,35 @@
+.NewService {
+    background-image: url('/public/images/fondo_madera.jpg');
+    top: 0;
+    left: 0;
+    height: calc(100vh - 6px);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: none;
+    overflow: hidden;
+    position: fixed;
+    margin-bottom: 10%;
+}
+
+.my-Newcontainer {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.NewService h1 {
+    top: 0;
+    font-size: 0.8;
+    margin-left: 40%;
+    padding-top: 0.5px;
+    padding-bottom: 0;
+}
+
+.titleAdver {
+    padding-top: 0;
+}

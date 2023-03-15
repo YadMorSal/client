@@ -1,0 +1,48 @@
+.EditUser {
+    top: 60px;
+    left: 0;
+    height: calc(100vh - 6px);
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+    overflow: hidden;
+
+}
+
+.Container-Edit {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 200px;
+}
+
+.Container-Edit {
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+.Form-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+}
+
+.Form-Container input {
+    max-width: 400px;
+    width: 100%;
+}
+
+.Form-Container h1 {
+    margin-top: -150px;
+}

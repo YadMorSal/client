@@ -1,0 +1,19 @@
+.DetailService {
+    position: relative;
+    top: 80px;
+    left: 0;
+    height: calc(100vh - 6px);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+    padding-bottom: 80%
+}
+
+.DetailService-Button {
+    width: 20%;
+}

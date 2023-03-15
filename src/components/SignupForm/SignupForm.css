@@ -1,0 +1,10 @@
+.FormSignup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Form.Control {
+    font-size: 2em;
+}
