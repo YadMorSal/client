@@ -6,7 +6,7 @@ const ServicesList = ({ services }) => {
 
             <Row>
                 {services.map((service) => (
-                    <Col md={4} key={service._id}>
+                    <Col lg={6} xxl={4} key={service._id}>
                         <ServiceCard {...service} />
                     </Col>
                 ))}

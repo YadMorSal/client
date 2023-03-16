@@ -39,12 +39,12 @@ const LoginForm = () => {
 
             <Form.Group className="mb-3" controlId="email">
                 <Form.Label>Email</Form.Label>
-                <Form.Control type="email" value={loginData.email} onChange={handleInputChange} name="email" style={{ width: '80%' }} />
+                <Form.Control type="email" value={loginData.email} onChange={handleInputChange} name="email" style={{ width: '100%' }} />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="password">
                 <Form.Label>Contraseña</Form.Label>
-                <Form.Control type="password" value={loginData.password} onChange={handleInputChange} name="password" style={{ width: '80%' }} />
+                <Form.Control type="password" value={loginData.password} onChange={handleInputChange} name="password" style={{ width: '100%' }} />
             </Form.Group>
 
             <div className="d-grid">

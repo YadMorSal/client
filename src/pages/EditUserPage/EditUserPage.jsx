@@ -8,7 +8,7 @@ const EditUserPage = () => {
 
 
     return (
-        <div className='EditUser mt-5'>
+        <div className='EditUser mt-4'>
             <Container className='Container-Edit d-flex align-items-center justify-content-center'>
                 <div className='Form-Container'>
                     <h1>Editar Usuario</h1>

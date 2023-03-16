@@ -6,6 +6,7 @@ const InfoPage = () => {
         <div className="fondo-pagina">
             <Container>
                 <Row className="InfoPage">
+
                     <Col md={6} className="text-center">
                         <h1 style={{ fontSize: "3em" }}>SI ERES CLIENTE</h1>
                         <hr />
@@ -26,8 +27,15 @@ const InfoPage = () => {
                             <li>Disfruta de todas las ventajas que te ofrece ser usuario de 3DM</li>
                         </ul>
                     </Col>
-                    <CreateUserButton className="create-user-button" />
                 </Row>
+                <Row>
+                    <Col lg={12}>
+                        <CreateUserButton className="create-user-button" />
+                    </Col>
+                </Row>
+
+
+
             </Container>
         </div>
     )

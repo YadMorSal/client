@@ -1,20 +1,27 @@
 .profile-container {
-
     top: 60px;
     left: 0;
     height: calc(100vh - 6px);
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-bottom: 60px;
     box-sizing: border-box;
     margin-top: 0;
     padding-top: 0;
     border-top: none;
-    overflow: hidden;
-    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 40%;
+    overflow-y: scroll;
+
 }
 
 .perfil img {
-    width: 40px;
+    width: 200px;
+}
+
+.favorites {
+    width: 100%;
+}
+
+.profiled {
+    width: 100%;
 }

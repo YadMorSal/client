@@ -49,62 +49,67 @@ const ProfilePage = ({ user_id }) => {
 
     return (
 
-        <div className="profile-container">
-            <h1>Bienvenido {user.firstName}, este es tu perfil</h1>
+        <div className="profile-container" style={{ textAlign: " center" }}>
+            < h1 > Bienvenido {user.firstName}, este es tu perfil</h1 >
             <Container>
                 <Row>
-                    <div className="row">
+                    <div className="row profiled">
                         <div className="col">
-                            <Card className="text-center">
-                                <Card.Body>
-                                    <Card.Title>TU INFORMACIÓN DE CONTACTO</Card.Title>
-                                    <hr />
-                                    <Card.Text className='perfil'>
-                                        <img src={userData.image} alt="" />
+                            <div className="mx-auto">
+                                <Card className=" text-center">
+                                    <Card.Body>
+                                        <Card.Title>TU INFORMACIÓN DE CONTACTO</Card.Title>
                                         <hr />
-                                        <h5>Nombre:</h5>
-                                        <p> {userData.firstName} {userData.lastName}</p>
-                                        <h5> Correo electrónico:</h5>
-                                        <p> {userData.email}</p>
-                                        <h5>Teléfono:</h5>
-                                        <p> {userData.phone}</p>
-                                        <h5>Role:</h5>
-                                        <p> {userData.role}</p>
-                                    </Card.Text>
-                                </Card.Body>
-                                <Card.Footer>
-                                    <div className="d-grid">
-                                        <Link className='d-grid' to={`/users/${user._id}/edit`}>
-                                            <Button variant="dark">Editar mi perfil</Button>
-                                        </Link>
-                                    </div>
-                                    <div className="d-grid">
-                                        <Button variant="danger" onClick={() => deleteUser(userData._id)}>Eliminar mi cuenta</Button>
-                                    </div>
-                                </Card.Footer>
-                            </Card>
+                                        <Card.Text className='perfil'>
+                                            <img src={userData.image} alt="" />
+                                            <hr />
+                                            <h5>Nombre:</h5>
+                                            <p> {userData.firstName} {userData.lastName}</p>
+                                            <h5> Correo electrónico:</h5>
+                                            <p> {userData.email}</p>
+                                            <h5>Teléfono:</h5>
+                                            <p> {userData.phone}</p>
+                                            <h5>Role:</h5>
+                                            <p> {userData.role}</p>
+                                        </Card.Text>
+                                    </Card.Body>
+                                    <Card.Footer>
+                                        <div className="d-grid">
+                                            <Link className='d-grid' to={`/users/${user._id}/edit`}>
+                                                <Button variant="dark">Editar mi perfil</Button>
+                                            </Link>
+                                        </div>
+                                        <div className="d-grid">
+                                            <Button variant="danger" onClick={() => deleteUser(userData._id)}>Eliminar mi cuenta</Button>
+                                        </div>
+                                    </Card.Footer>
+                                </Card>
+                            </div>
                         </div>
                     </div>
                 </Row>
+                <hr />
                 <Row>
-                    <div className="row">
-                        <div className="col">
-                            <div className="text-favorite">
-                                {userData.favoriteServices && userData.favoriteServices.length > 0 ? (
-                                    <>
-                                        <h3>Favoritos</h3>
-                                        <div className="row">
-                                            {userData.favoriteServices.map((service) => (
-                                                <div className="col">
-                                                    <ServiceCard {...service} />
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </>
-                                ) : (
-                                    <p>No tienes servicios favoritos aún.</p>
-                                )}
-                            </div>
+                    <h3 className=" text-center">Favoritos</h3>
+                    <hr />
+                    <div className="row favorites ">
+
+                        <div className="col text-favorite">
+                            {userData.favoriteServices && userData.favoriteServices.length > 0 ? (
+                                <>
+
+                                    <div className="row">
+                                        {userData.favoriteServices.map((service) => (
+                                            <div className="col  mb-2  ">
+                                                <ServiceCard {...service} />
+                                            </div>
+                                        ))}
+                                    </div>
+                                </>
+                            ) : (
+                                <p>No tienes servicios favoritos aún.</p>
+                            )}
+
                         </div>
                     </div>
                 </Row>

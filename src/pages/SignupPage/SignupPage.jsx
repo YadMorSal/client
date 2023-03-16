@@ -1,26 +1,26 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import SignupForm from '../../components/SignupForm/SignupForm'
+import './SignupPage.css'
 
 const SignupPage = () => {
 
     return (
 
-        <Container>
 
-            <Row className="justify-content-center">
 
-                <Col md={6}>
+        <div className="register">
 
-                    <h1>Registro</h1>
 
-                    <hr />
 
-                    <SignupForm />
+            <h1 className='titleRegister'>Registro</h1>
+            <Container className="container-register">
+                <SignupForm />
+            </Container>
 
-                </Col>
-            </Row>
 
-        </Container>
+        </div>
+
+
     )
 }
 

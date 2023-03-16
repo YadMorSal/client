@@ -27,9 +27,7 @@ const EditUser = ({ user_id }) => {
         loadData()
     }, [])
 
-    // useEffect(() => {
-    //     console.log("QUIEN ES ESTE SEÑOR??", user_id)
-    // }, [user_id])
+
 
     const loadData = () => {
         userServices
@@ -78,7 +76,7 @@ const EditUser = ({ user_id }) => {
         <Form onSubmit={handleFormSubmit}>
             <Row className="mb-3">
                 <Form.Group as={Col} className="mb-3" controlId="image">
-                    <Form.Label>Imagen (URL)</Form.Label>
+                    <Form.Label>Imagen </Form.Label>
                     <Form.Control type="file" onChange={handleFileUpload} className="form-control" />
                 </Form.Group>
                 <Form.Group as={Col} className="mb-3" controlId="firstName">
@@ -95,12 +93,12 @@ const EditUser = ({ user_id }) => {
                 <Form.Control type="email" value={signupData.email} onChange={handleInputChange} name="email" required />
             </Form.Group>
 
-            <Form.Group as={Col} className="mb-3" controlId="phone">
+            <Form.Group className="mb-3" controlId="phone">
 
                 <Form.Label>Telefono</Form.Label>
                 <Form.Control type="text" value={signupData.phone} onChange={handleInputChange} name="phone" required />
             </Form.Group>
-            <Form.Group as={Col} className="mb-3" controlId="phone">
+            <Form.Group className="mb-3" controlId="phone">
                 <Form.Label>Precio/hora</Form.Label>
                 <Form.Control type="number" value={signupData.hourlyRate} onChange={handleInputChange} name="hourlyRate" required />
             </Form.Group>

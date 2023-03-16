@@ -1,21 +1,28 @@
-.fondo-pagina {
-    top: 0;
-    left: 0;
-    height: calc(100vh - 60px);
-    width: 100%;
-    background-image: url('/public/images/fondo_madera.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .InfoPage {
-    padding-top: 150px;
+    padding-top: 200px;
     color: white;
     text-align: justify;
-    color: rgb(62, 61, 3)
+    color: rgb(62, 61, 3);
 }
 
-Col {
+.InfoPage h1 {
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .InfoPage h1 {
+        font-size: 2rem;
+    }
+
+    .create-user-button {
+        width: 100%;
+        max-width: 100px;
+        font-size: 1rem;
+        margin: 10px auto 10px;
+    }
+}
+
+.fondo-pagina Col {
     text-align: center;
 }
 
@@ -25,7 +32,7 @@ Col {
 }
 
 .InfoPage ul li {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
 }
 
@@ -35,8 +42,20 @@ h3 {
 
 .create-user-button {
     display: block;
-    margin: 60px auto 0;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
     background-color: black;
     color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .InfoPage {
+        padding-top: 50px;
+    }
 }

@@ -5,26 +5,27 @@ import './LoginPage.css'
 const LoginPage = () => {
 
     return (
-        <div className='loginwall'>
-            <Container>
+
+        <Container>
+            <div className='loginwall'>
 
                 <Row>
 
-                    <Col xs={12} md={{ offset: 2, span: 10 }} className="ml-auto" style={{ display: 'flex', alignItems: 'center', minHeight: '100vh' }}>
+                    <div md={{ offset: 5, span: 5 }} style={{ display: 'flex', alignItems: 'center', minHeight: '100vh' }}>
                         <div className="w-100 text-center">
                             <h1>Inicio sesión</h1>
 
                             <hr />
 
+                            <LoginForm className="mx-auto" style={{ width: '70%' }} />
 
-                            <LoginForm className="mx-auto" />
                         </div>
 
-                    </Col>
+                    </div>
                 </Row>
+            </div>
+        </Container>
 
-            </Container>
-        </div>
     )
 }
 

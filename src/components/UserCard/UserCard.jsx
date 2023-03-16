@@ -31,7 +31,10 @@ const UserCard = ({ firstName, lastName, email, phone, description, hourlyRate, 
         <Link to={`/detallesUsuario/${_id}`}>
             <Card className="mb-2 UserCard">
                 <Card.Body>
-                    <img className='imageUser' src={image} alt="user avatar" />
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                        <img className='imageUser' src={image} alt="user avatar" />
+
+                    </div>
                     <hr />
                     <Card.Title>{firstName} {lastName}</Card.Title>
                     <Card.Text>

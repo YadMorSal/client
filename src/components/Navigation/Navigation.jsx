@@ -11,9 +11,9 @@ const Navigation = () => {
     return (
 
 
-        <Navbar expand="md" className='mb-4' style={{ backgroundColor: '#639419', zIndex: 1, position: 'fixed', top: 0, left: 0, right: 0 }}>
+        <Navbar expand="md" className='mb-4' style={{ backgroundColor: '#639419', zIndex: 100, position: 'fixed', top: 0, left: 0, right: 0 }}>
             <Container>
-                <Navbar.Brand href="#home">3DM</Navbar.Brand>
+                <Navbar.Brand >3DM</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
@@ -53,10 +53,10 @@ const Navigation = () => {
                                 </>
                                 :
                                 <>
-                                    <Link className="ml-auto" to="/iniciar-sesion">
+                                    <Link className="mr-auto" to="/iniciar-sesion">
                                         <Nav.Link as="span">Iniciar sesión</Nav.Link>
                                     </Link>
-                                    <Link className="ml-auto" to="/registro">
+                                    <Link className="mr-auto" to="/registro">
                                         <Nav.Link as="span">Registrarme</Nav.Link>
                                     </Link>
 

@@ -82,9 +82,13 @@ const ServiceDetailsPage = () => {
 
             {service ? (
                 <>
-                    <h1 className="mb-4"> {service.title}</h1>
-                    <hr />
-                    <Row>
+                    <Row className='detailTitle'>
+                        <Col md={{ span: 6, offset: 1 }}>
+                            <h1 className="mb-4"> {service.title}</h1>
+                            <hr />
+                        </Col>
+                    </Row>
+                    <Row className='details-details'>
                         <Col md={{ span: 6, offset: 1 }}>
                             <h3>Descripción</h3>
                             <p>{service.description}</p>
@@ -93,7 +97,7 @@ const ServiceDetailsPage = () => {
                             <h3>Teléfono de contacto</h3>
                             <p>{service.phone}</p>
                             <h3>Precio/hora</h3>
-                            <p>{service.prize}</p>
+                            <p>{service.prize}€</p>
                             <hr />
                             <Link to="/servicios">
                                 <Button as="figure" variant="dark">
@@ -106,22 +110,32 @@ const ServiceDetailsPage = () => {
                         </Col>
                     </Row>
                 </>
+
             ) : (
-                <p>No hay servicio seleccionado</p>
+                <Row>
+                    <p>No hay servicio seleccionado</p>
+                </Row>
             )}
-            {isFav ?
-                <Button as="figure" variant="warning" onClick={removeFromFav}>
-                    Quitar de Favoritos
-                </Button>
-                :
-                <Button as="figure" variant="dark" onClick={addToFav}>
-                    Añadir a Favoritos
-                </Button>
-            }
+            <div className='bottonFav'>
+                {isFav ?
 
-            <NewComment service_id={service_id} onNewComment={handleNewComment} loadServiceData={loadServiceData} />
+                    <Button as="figure" variant="warning" onClick={removeFromFav}>
+                        Quitar de Favoritos
+                    </Button>
+                    :
+                    <Button as="figure" variant="dark" onClick={addToFav}>
+                        Añadir a Favoritos
+                    </Button>
 
-            <CommentList comments={service.comments} service_id={service_id} loadServiceData={loadServiceData} />
+                }
+            </div>
+            <Row className="comments-details">
+                <Col md={{ span: 6, offset: 1 }}>
+                    <NewComment service_id={service_id} onNewComment={handleNewComment} loadServiceData={loadServiceData} />
+
+                    <CommentList comments={service.comments} service_id={service_id} loadServiceData={loadServiceData} />
+                </Col>
+            </Row>
 
 
 

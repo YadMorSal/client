@@ -1,13 +1,13 @@
 import { useState, useContext, useEffect } from "react"
-import { Form, Button } from "react-bootstrap"
+import { Form, Button, Alert } from "react-bootstrap"
 import commentsService from "../../services/comments.services"
-
+import { AuthContext } from "../../contexts/auth.context"
 const NewComment = ({ service_id, onNewComment, loadServiceData }) => {
 
     const [commentData, setCommentData] = useState({
         comment: ''
     })
-
+    const { user } = useContext(AuthContext);
     useEffect(() => {
         loadServiceData()
     }, [commentData])
@@ -32,7 +32,13 @@ const NewComment = ({ service_id, onNewComment, loadServiceData }) => {
             .catch(err => console.log(err))
     }
 
-
+    if (!user) {
+        return (
+            <Alert variant="warning">
+                Debe estar conectado para escribir un comentario
+            </Alert>
+        );
+    }
 
     return (
         <Form onSubmit={handleSubmit}>
